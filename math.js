@@ -65,3 +65,46 @@
 
 // let Minimum = getMinimum(num1, num2, num3);
 // console.log("The smallest number is:", Minimum);
+
+
+
+
+// Find the smallest from an Array using function............................................................................
+
+// function getSmallest(numbers) {
+//     let elements = numbers[0];
+//     for (i = 0; i < numbers.length; i++) {
+//         let number = numbers[i];
+//         if (number < elements) {
+//             elements = number;
+//         }
+//     }
+//     return elements;
+
+// }
+
+// let ages = [44, 64, 34, 11, 75, 45, 74, 23, 33];
+// let smallest = getSmallest(ages);
+// console.log(smallest);
+
+
+
+
+
+// Find the largest from an Array using function............................................................................
+
+function getLargest(array) {
+    let firstElement = array[0];
+    for (i = 0; i < array.length; i++) {
+        let element = array[i];
+        if (element > firstElement) {
+            firstElement = element;
+        }
+    }
+    return firstElement;
+}
+
+
+let ages = [44, 64, 34, 11, 75, 45, 74, 23, 33];
+const result = getLargest(ages);
+console.log('The largest number is:', result);
